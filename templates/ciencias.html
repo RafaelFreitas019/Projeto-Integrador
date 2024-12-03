@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo - Matemática</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__logo-title">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1>EducaAuditivo - Aulas Online</h1>
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>Ciências - Sistema Solar</h2>
+        <p>
+            O Sistema Solar é formado pelo Sol e por todos os corpos celestes que orbitam ao seu redor, como planetas, luas, asteroides e cometas. Conheça os principais componentes:
+        </p>
+        <h3>O Sol</h3>
+        <p>
+            O Sol é uma estrela de médio porte e é a principal fonte de energia para a Terra. Sua energia é gerada por fusão nuclear no seu núcleo.
+        </p>
+        <h3>Planetas</h3>
+        <ul>
+            <li><strong>Mercúrio:</strong> O planeta mais próximo do Sol.</li>
+            <li><strong>Vênus:</strong> Conhecido por seu clima quente e denso.</li>
+            <li><strong>Terra:</strong> O único planeta conhecido que possui vida.</li>
+            <li><strong>Marte:</strong> Planeta vermelho, com evidências de água no passado.</li>
+            <li><strong>Júpiter:</strong> O maior planeta, um gigante gasoso.</li>
+            <li><strong>Saturno:</strong> Conhecido por seus anéis impressionantes.</li>
+            <li><strong>Urano:</strong> Planeta gasoso com inclinação axial extrema.</li>
+            <li><strong>Netuno:</strong> O planeta mais distante, com ventos muito fortes.</li>
+        </ul>
+        <h3>Outros Corpos Celestes</h3>
+        <ul>
+            <li><strong>Luas:</strong> Satélites naturais que orbitam planetas.</li>
+            <li><strong>Asteróides:</strong> Pequenos corpos rochosos ou metálicos que orbitam o Sol.</li>
+            <li><strong>Cometas:</strong> Corpos de gelo e rocha que deixam uma cauda brilhante ao se aproximarem do Sol.</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <a href="/">Voltar para o Dashboard</a>
+    </footer>
+</body>
+
+</html>

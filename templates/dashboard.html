@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo | Dashboard</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__menu">
+            <div class="header__logo-title">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <h1>EducaAuditivo - Aulas Online</h1>
+            </div>
+            <div class="header__menu-actions">
+                <a class="header__menu-items" href="{{ url_for('login') }}">Trocar Usuário</a>
+                <a class="header__menu-items" href="{{ url_for('index') }}">Finalizar Sessão</a>
+            </div>
+        </div>     
+    </header>
+
+    <main class="dashboard">
+        <section class="dashboard__section">
+            <h2>Aulas Disponíveis:</h2>
+            <div class="dashboard__cards">
+                <div class="card">
+                    <h3>Matemática Básica</h3>
+                    <p>Aprenda conceitos fundamentais de matemática.</p>
+                    <a href="{{ url_for('matematica') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>Português</h3>
+                    <p>Melhore sua gramática e interpretação de texto.</p>
+                    <a href="{{ url_for('portugues') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>Ciências</h3>
+                    <p>Explore o fascinante mundo das ciências naturais.</p>
+                    <a href="{{ url_for('ciencias') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>História</h3>
+                    <p>Explore a história do Brasil e do mundo.</p>
+                    <a href="{{ url_for('historia') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>Geografia</h3>
+                    <p>Entenda os conceitos de geografia mundial e local.</p>
+                    <a href="{{ url_for('geografia') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>Física</h3>
+                    <p>Aprenda os conceitos fundamentais da física.</p>
+                    <a href="{{ url_for('fisica') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>Química</h3>
+                    <p>Explore os princípios básicos e experimentos químicos.</p>
+                    <a href="{{ url_for('quimica') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>Biologia</h3>
+                    <p>Descubra o funcionamento do corpo humano e dos seres vivos.</p>
+                    <a href="{{ url_for('biologia') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+                <div class="card">
+                    <h3>Libras</h3>
+                    <p>Aprenda a se comunicar com deficientes auditivos por meio da linguagem de libras.</p>
+                    <a href="{{ url_for('libras') }}" class="button">Acessar Aula</a>
+                    <a href="{{ url_for('atividades') }}" class="button">Atividades</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard__about">
+            <h2>Quem somos</h2>
+            <div class="enxuto-centralizado">
+                Somos uma plataforma dedicada a oferecer ensino de qualidade para todos.
+                Nossa missão é facilitar o acesso à educação através de conteúdos interativos, aulas dinâmicas e atividades desafiadoras.
+                Aprender nunca foi tão acessível e divertido!
+            </div>
+    </main>
+
+    <footer class="footer">
+        <a href="404.html">Termos de uso</a>
+        <a href="/">Declaração de privacidade</a>
+        <a href="/">Central de ajuda</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo - Matemática</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__logo-title">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1>EducaAuditivo - Aulas Online</h1>
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>Matemática - Funções Quadráticas</h2>
+        <p>
+            As funções quadráticas são um tipo de função polinomial do segundo grau. Sua forma geral é dada por:
+            <pre>
+            f(x) = ax² + bx + c
+            </pre>
+            Onde:
+            <ul>
+                <li><strong>a:</strong> Coeficiente quadrático.</li>
+                <li><strong>b:</strong> Coeficiente linear.</li>
+                <li><strong>c:</strong> Termo constante.</li>
+            </ul>
+        </p>
+        <h3>Propriedades</h3>
+        <ul>
+            <li><strong>Gráfico:</strong> O gráfico de uma função quadrática é uma parábola.</li>
+            <li><strong>Raízes:</strong> As raízes da equação quadrática podem ser encontradas pela fórmula de Bhaskara.</li>
+            <li><strong>Vértice:</strong> O vértice da parábola é dado por <em>xv = -b/2a</em>.</li>
+        </ul>
+        <h3>Exemplo</h3>
+        <p>
+            Considere a função <em>f(x) = x² - 4x + 3</em>. Vamos determinar as raízes:
+            <ul>
+                <li>Usando a fórmula de Bhaskara, temos:</li>
+                <pre>
+                x = (-(-4) ± √((-4)² - 4(1)(3))) / (2(1))
+                x = (4 ± √(16 - 12)) / 2
+                x = (4 ± √4) / 2
+                x = (4 ± 2) / 2
+                </pre>
+                Portanto, as raízes são: x = 3 e x = 1.
+            </ul>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <a href="/">Voltar para o Dashboard</a>
+    </footer>
+</body>
+
+</html>

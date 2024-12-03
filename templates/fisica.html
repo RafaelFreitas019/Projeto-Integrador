@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo - Matemática</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__logo-title">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1>EducaAuditivo - Aulas Online</h1>
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>Física - Leis de Newton</h2>
+        <p>
+            As Leis de Newton são fundamentais para o estudo do movimento e da física clássica. Elas descrevem como os corpos se movem e interagem sob a influência de forças.
+        </p>
+        <h3>1ª Lei de Newton (Lei da Inércia)</h3>
+        <p>
+            Um objeto em repouso tende a permanecer em repouso, e um objeto em movimento tende a continuar se movendo com velocidade constante, a menos que uma força externa atue sobre ele.
+        </p>
+        <h3>2ª Lei de Newton (Lei Fundamental da Dinâmica)</h3>
+        <p>
+            A aceleração de um corpo é diretamente proporcional à força resultante sobre ele e inversamente proporcional à sua massa. A equação é dada por:
+            <pre>
+            F = m * a
+            </pre>
+            Onde:
+            <ul>
+                <li><strong>F:</strong> Força (em Newtons).</li>
+                <li><strong>m:</strong> Massa (em kg).</li>
+                <li><strong>a:</strong> Aceleração (em metros por segundo ao quadrado).</li>
+            </ul>
+        </p>
+        <h3>3ª Lei de Newton (Lei da Ação e Reação)</h3>
+        <p>
+            Para toda ação, existe uma reação de mesma intensidade, mas de sentido contrário. Isso significa que quando você empurra um objeto, ele exerce uma força igual e oposta sobre você.
+        </p>
+        <p>
+            Exemplo prático: quando você nada, empurra a água para trás, e a água exerce uma força para frente, fazendo com que você se mova.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <a href="/">Voltar para o Dashboard</a>
+    </footer>
+</body>
+
+</html>

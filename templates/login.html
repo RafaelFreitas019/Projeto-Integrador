@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo | Login</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__menu">
+            <div class="header__logo-title">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <h1>EducaAuditivo - Acesso</h1>
+            </div>
+            <a class="header__menu-items" href="{{ url_for('register') }}">Registrar-se</a>
+        </div>
+    </header>
+
+    <section class="card">
+        <section class="card__container">
+            <h2>Inicie sessão</h2>
+            <!-- Mudança aqui: adicionei o atributo action para enviar o formulário para a rota de login -->
+            <form class="form" method="POST" action="{{ url_for('login') }}">
+                <input class="form__input" type="email" name="email" placeholder="Email" required>
+                <input class="form__input" type="password" name="senha" placeholder="Senha" required>
+                <button class="button" type="submit">Entrar</button>
+                <div class="form__remember-me">
+                    <label for="cbox">
+                        <input id="cbox" type="checkbox">Lembre-se de mim
+                    </label>
+                    <a href="{{ url_for('recuperacao') }}">Esqueci minha senha</a>
+                </div>
+                <p id="error-message" style="color: red; display: none;">Email ou senha incorretos. Tente novamente.</p>
+            </form>
+        </section>
+    </section>
+
+    <footer class="footer">
+        <a href="404.html">Termos de uso</a>
+        <a href="/">Declaração de privacidade</a>
+        <a href="/">Central de ajuda</a>
+    </footer>
+</body>
+
+</html>

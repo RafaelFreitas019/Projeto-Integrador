@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo - Matemática</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__logo-title">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1>EducaAuditivo - Aulas Online</h1>
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>Biologia - Sistema Respiratório</h2>
+        <p>
+            O sistema respiratório é responsável pela troca de gases entre o organismo e o ambiente. Ele permite a absorção de oxigênio e a eliminação de dióxido de carbono.
+        </p>
+        <h3>Partes do Sistema Respiratório</h3>
+        <ul>
+            <li><strong>Vias Aéreas Superiores:</strong> Incluem nariz, faringe, laringe e traqueia.</li>
+            <li><strong>Vias Aéreas Inferiores:</strong> Incluem brônquios, bronquíolos e alvéolos pulmonares.</li>
+            <li><strong>Pulmões:</strong> São os órgãos responsáveis pela troca gasosa.</li>
+        </ul>
+        <h3>Processo de Respiração</h3>
+        <p>
+            Durante a inspiração, o ar entra nos pulmões, onde ocorre a troca de oxigênio e dióxido de carbono. O oxigênio é transferido para o sangue, enquanto o dióxido de carbono é eliminado.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <a href="/">Voltar para o Dashboard</a>
+    </footer>
+</body>
+
+</html>

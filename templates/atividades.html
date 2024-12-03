@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo | Atividades</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__menu">
+            <div class="header__logo-title">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <h1>EducaAuditivo - Atividades</h1>
+            </div>
+            <a class="header__menu-items" href="{{ url_for('dashboard') }}">Voltar</a>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="dashboard__section">
+            <h2>Atividades</h2>
+            <div class="dashboard__cards">
+                <div class="card">
+                    <h3>Exercícios de Matemática</h3>
+                    <p>Pratique e teste seus conhecimentos.</p>
+                    <a href="{{ url_for('ativ_mat') }}"" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Interpretação de Texto</h3>
+                    <p>Resolva questões de leitura e análise textual.</p>
+                    <a href="{{ url_for('ativ_port') }}" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Experimentos Simples</h3>
+                    <p>Atividades práticas para entender conceitos científicos.</p>
+                    <a href="{{ url_for('ativ_cien') }}" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Exercícios de História</h3>
+                    <p>Atividades sobre os principais eventos históricos e suas repercussões ao longo do tempo.</p>
+                    <a href="{{ url_for('ativ_hist') }}" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Exercícios de Geografia</h3>
+                    <p>Estude os aspectos físicos, políticos e econômicos dos países e continentes do mundo.</p>
+                    <a href="{{ url_for('ativ_geo') }}" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Exercícios de Física</h3>
+                    <p>Desafios sobre leis da física, movimento, forças e energia.</p>
+                    <a href="{{ url_for('ativ_fis') }}" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Exercícios de Química</h3>
+                    <p>Teste seus conhecimentos sobre reações químicas, tabelas periódicas e propriedades dos elementos.</p>
+                    <a href="{{ url_for('ativ_quim') }}" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Exercícios de Biologia</h3>
+                    <p>Desafios relacionados ao estudo de organismos vivos, seus sistemas e funções biológicas.</p>
+                    <a href="{{ url_for('ativ_bio') }}" class="button">Acessar Atividade</a>
+                </div>
+                <div class="card">
+                    <h3>Exercícios de Libras</h3>
+                    <p>Teste seu conhecimento desvendendo a linguagem de libras.</p>
+                    <a href="{{ url_for('ativ_lib') }}" class="button">Acessar Atividade</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="404.html">Termos de uso</a>
+        <a href="/">Declaração de privacidade</a>
+        <a href="/">Central de ajuda</a>
+    </footer>
+</body>
+
+</html>

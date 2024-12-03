@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo - Matemática</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__logo-title">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1>EducaAuditivo - Aulas Online</h1>
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>Química - Reações Químicas</h2>
+        <p>
+            As reações químicas são transformações que resultam na formação de novas substâncias. Durante essas reações, há uma reorganização dos átomos, mas a quantidade de matéria se mantém constante (Lei da Conservação da Massa).
+        </p>
+        <h3>Tipos de Reações Químicas</h3>
+        <ul>
+            <li><strong>Reações de Síntese:</strong> Quando duas ou mais substâncias reagem para formar um produto único. Exemplo: <em>A + B → AB</em>.</li>
+            <li><strong>Reações de Decomposição:</strong> Quando um composto se divide em dois ou mais produtos. Exemplo: <em>AB → A + B</em>.</li>
+            <li><strong>Reações de Substituição:</strong> Quando um elemento troca de lugar com outro em um composto. Exemplo: <em>A + BC → AC + B</em>.</li>
+            <li><strong>Reações de Dupla Troca:</strong> Quando dois compostos trocam seus elementos. Exemplo: <em>AB + CD → AD + CB</em>.</li>
+        </ul>
+        <h3>Exemplo de Reação</h3>
+        <p>
+            A combustão do metano pode ser representada pela equação:
+            <pre>
+            CH₄ + 2O₂ → CO₂ + 2H₂O
+            </pre>
+            Nessa reação, o metano reage com o oxigênio, formando dióxido de carbono e água.
+        </p>
+        
+    </section>
+
+    <footer class="footer">
+        <a href="/">Voltar para o Dashboard</a>
+    </footer>
+</body>
+
+</html>

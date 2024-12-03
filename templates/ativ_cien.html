@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo - Matemática</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__logo-title">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1>EducaAuditivo - Aulas Online</h1>
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>Ciências - Átomos e Moléculas</h2>
+        <p>
+            A matéria é formada por átomos, que se combinam para formar moléculas. Os átomos são compostos por partículas subatômicas, como prótons, nêutrons e elétrons.
+        </p>
+        <h3>Estrutura Atômica</h3>
+        <ul>
+            <li><strong>Prótons:</strong> Partículas com carga positiva, localizadas no núcleo.</li>
+            <li><strong>Nêutrons:</strong> Partículas sem carga, também no núcleo.</li>
+            <li><strong>Elétrons:</strong> Partículas com carga negativa, localizadas em órbitas ao redor do núcleo.</li>
+        </ul>
+        <h3>Moléculas</h3>
+        <p>
+            Moléculas são formadas pela ligação de átomos. Essas ligações podem ser covalentes, quando os átomos compartilham elétrons, ou iônicas, quando há transferência de elétrons.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <a href="/">Voltar para o Dashboard</a>
+    </footer>
+</body>
+
+</html>

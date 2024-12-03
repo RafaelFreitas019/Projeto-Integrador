@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo | Início</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <div class="header__logo-title">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+                <h1>EducaAuditivo</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__welcome">
+        <div class="card__welcome">
+            <h1>Bem-vindo!</h1>
+            <h2>Comece a aprender agora</h2>
+            <div class="form">
+                <a href="{{ url_for('login') }}" class="button">Já tenho cadastro, entrar</a>
+                <a href="{{ url_for('register') }}" class="button">Sou novo, fazer cadastro</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="404.html">Termos de uso</a>
+        <a href="/">Declaração de privacidade</a>
+        <a href="/">Central de ajuda</a>
+    </footer>
+</body>
+</html>

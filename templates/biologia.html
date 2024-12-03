@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EducaAuditivo - Matemática</title>
+</head>
+
+<body>
+    <header class="header header--green">
+        <div class="header__logo-title">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" style="height: 40px; margin-right: 10px;">
+            <h1>EducaAuditivo - Aulas Online</h1>
+        </div>
+    </header>
+
+    <section class="card">
+        <h2>Biologia - Cadeias Alimentares</h2>
+        <p>
+            Uma cadeia alimentar representa o fluxo de energia entre os seres vivos. Cada nível trófico desempenha um papel essencial:
+        </p>
+        <ul>
+            <li><strong>Produtores:</strong> Seres autotróficos, como plantas, que realizam fotossíntese.</li>
+            <li><strong>Consumidores:</strong> Organismos heterotróficos que se alimentam de outros seres vivos. Dividem-se em primários, secundários e terciários.</li>
+            <li><strong>Decompositores:</strong> Fungos e bactérias que reciclam matéria orgânica.</li>
+        </ul>
+        <p>
+            Exemplo de cadeia alimentar simples:
+        </p>
+        <pre>
+        Capim → Gafanhoto → Sapo → Cobra → Águia
+        </pre>
+        <p>
+            Entender as cadeias alimentares ajuda a compreender o equilíbrio nos ecossistemas.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <a href="/">Voltar para o Dashboard</a>
+    </footer>
+</body>
+
+</html>
